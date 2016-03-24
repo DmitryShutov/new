@@ -1,0 +1,13 @@
+.header_container {
+    display: flex;
+}
+
+.header_container>h1 {
+    margin-left: 200px;    
+}
+
+.header_container>h2 {
+	font-family: Roboto;
+	font-size: 36px;
+	margin-left: 100px;
+}

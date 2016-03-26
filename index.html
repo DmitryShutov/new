@@ -3,16 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Натяжные потолки в Самаре New Ceiling</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<div class="header_container col-lg-12">
-			<h1>NEW CEILING</h1>
+	<header class="container">
+		<div class="header_container">
+			<h1>МАЭСТРО</h1>
 			<h2>НАТЯЖНЫЕ ПОТОЛКИ В САМАРЕ И ОБЛАСТИ</h2>
-			<ul>
+			<ul class="contacts">
 				<li><a href="tel:+7-929-707-707-3">+7 (929) 707-707-3</a></li>
 				<li><a href="tel:+7-927-724-27-71">+7 (927) 724-27-71	</a></li>
 				<li> <button>ЗАКАЗАТЬ ЗВОНОК</button> </li>
@@ -20,45 +20,49 @@
 		</div>
 	</header>
 	<main>
-	<section class="menu">
-        <nav>
-			<a href="#why_we">НАШИ ПРЕИМУЩЕСТВА</a>
-            <a href="#colors">ЦВЕТОВАЯ ГАММА ПОТОЛКОВ</a>
-			<a href="#calc">КАЛЬКУЛЯТОР</a>
-			<a href="#our_work">НАШИ РАБОТЫ</a>
-			<a href="#reviews">ОТЗЫВЫ</a>
-			<a href="#price">ЦЕНЫ</a>
-		</nav>
-    </section>
+	<nav class="container">
+        <ul class="nav">
+            <li><a href="#why_we">НАШИ ПРЕИМУЩЕСТВА</a></li>
+            <li><a href="#colors">ЦВЕТОВАЯ ГАММА ПОТОЛКОВ</a></li>
+            <li><a href="#calc">КАЛЬКУЛЯТОР</a></li>
+            <li><a href="#our_work">НАШИ РАБОТЫ</a></li>
+            <li><a href="#reviews">ОТЗЫВЫ</a></li>
+            <li><a href="#price">ЦЕНЫ</a></li>	
+        </ul>		
+	</nav>     
+    <div class="slider_and_form container">
+        <div class="verticalform">
+            <span class="request_text">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ПО ТЕЛЕФОНУ</span>
+            <form action="mail" method="sendmail" >
+                <input type="tel" placeholder="+7 (9ХХ)">
+                <input type="text" placeholder="Ваше имя">
+                <button>Получить консультацию</button>
+            </form>
+        </div>
+	</div>
 
-	<section class="slider_and_form">
-		<form action="mail" method="sendmail" >
-			<input type="tel" placeholder="+7 (9ХХ)">
-            <input type="text" placeholder="Ваше имя">
-            <button>Получить консультацию</button>
-		</form>
-	</section>
-
-	<section class="why_we" id="why_we">
+	<section class="why_we container" id="why_we">
 		<h1>НАШИ ПРЕИМУЩЕСТВА</h1>
-		<ul>
-			<li>Изготовление 24 часа (сегодня замер - завтра монтаж)</li>
-			<li>работа без выходных</li>
-			<li>цветовая гамма от белого до фотопечати</li>
-			<li>более 5 лет на рынке</li>
-		</ul>
-        <ul>
-            <li>бесплатный замер</li>
-            <li>взрывозащищенное оборудование</li>
-            <li>гарантия на работы - 3 года, на материалы - 10 лет</li>
-            <li>более 7000 тысяч довольных клинетов за все время работы</li>
-        </ul>
+        <div class="list">
+            <ul>
+                <li>Изготовление 24 часа (сегодня замер - завтра монтаж)</li>
+                <li>работа без выходных</li>
+                <li>цветовая гамма от белого до фотопечати</li>
+                <li>более 5 лет на рынке</li>
+            </ul>
+            <ul>
+                <li>бесплатный замер</li>
+                <li>взрывозащищенное оборудование</li>
+                <li>гарантия на работы - 3 года, на материалы - 10 лет</li>
+                <li>более 7000 тысяч довольных клинетов за все время работы</li>
+            </ul>
+        </div>
 	</section>
-    <section class="colors" id="colors">
+    <section class="colors container" id="colors">
         <h1>Цветовая гамма потолков</h1>
     </section>
 
-	<section class="calc" id="calc">
+	<section class="calc container" id="calc">
 		<h1>Расчет</h1>
         <table>
             <tr>
@@ -117,22 +121,22 @@
             </tr>
         </table>
 	</section>
-    <section class="horizontal_form">
+    <section class="horizontal_form container">
         <form action="mail" method="sendmail" >
 			<input type="tel" placeholder="+7 (9ХХ)">
             <input type="text" placeholder="Ваше имя">
             <button>Получить консультацию</button>
 		</form>
     </section>
-    <section class="our_work" id="our_work">
+    <section class="our_work container" id="our_work">
 		<h1>Фото наших работ</h1>
 	</section>
-    <section class="reviews">        
+    <section class="reviews container">        
     </section>	
 	<!--<section class="our_deals" id="our_deals">
 		<h1>Действующие акции на натяжные потолки</h1>
 	</section> -->
-    <section class="price" id="price">
+    <section class="price container" id="price">
         <h1>Наши цены</h1>
         <table>
             <tr>

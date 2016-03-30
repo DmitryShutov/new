@@ -1,6 +1,5 @@
 .container {
     display: block;
-    width: 95%;
     margin: auto;        
 }
 
@@ -43,28 +42,38 @@
     text-decoration: none;
 }
 
-.verticalform {
-    clear: both;
-    float: right;
-    margin: 150px 10%;
+.slider_and_form {
+    position: relative;
+}
+
+.slider_and_form > img {
+    width: 100%;
+    height: 700px;
+}
+
+.slider_form {
     width: 220px;
-          
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    background-color: white;
+        
 }
 
-.verticalform > form {
-    width: 220px;    
-}
-
-.verticalform > form > input {
+.form_horizontal * {
     width: 200px;
     margin: 10px;
-    padding: 0px;
+    display: block;
+    padding: 11px 0;
+    box-sizing: border-box;
 }
 
-.verticalform > form >button {
-    margin: 10px;
-    width: 204px;
-    padding: 0px;
+.form_horizontal > input {
+    margin: 20px 10px;
+}
+
+.form_horizontal:last-child {
+    margin-bottom: 17px;
 }
 
 section > h1 {
@@ -73,7 +82,7 @@ section > h1 {
 
 .request_text {
     display: inline-block;
-    width: 220px;
+    width: 200px;
     text-align: center;
 }
 
@@ -93,5 +102,5 @@ section > h1 {
 
 .list > ul > li {
     list-style: none;
-    margin-bottom: 80px;
+    margin: 0 0 80px 12%;
 }

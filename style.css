@@ -60,7 +60,7 @@
         
 }
 
-.form_horizontal * {
+.form_vertical * {
     width: 200px;
     margin: 10px;
     display: block;
@@ -68,11 +68,11 @@
     box-sizing: border-box;
 }
 
-.form_horizontal > input {
+.form_vertical > input {
     margin: 20px 10px;
 }
 
-.form_horizontal:last-child {
+.form_vertical:last-child {
     margin-bottom: 17px;
 }
 
@@ -103,4 +103,27 @@ section > h1 {
 .list > ul > li {
     list-style: none;
     margin: 0 0 80px 12%;
+}
+
+.colors {
+    text-align: center;
+}
+
+.calc_table {
+    margin: 0 auto;
+}
+
+.form_horizontal > form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form_horizontal input {
+    width: 25%;
+    height: 30px;
+}
+
+.form_horizontal button {
+    width: 25%;
 }

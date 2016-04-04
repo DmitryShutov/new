@@ -1,3 +1,6 @@
+body {
+    font-family: Roboto;
+}
 .container {
     display: block;
     margin: auto;        
@@ -25,21 +28,27 @@
     list-style: none;
 }
 
-.nav {
-    list-style: none;
-    text-align: center;
-    display: flex;
+.menu {
+   background: #3F51B5;
 }
 
-.nav li {
-    display: inline;
-    margin: auto;
+.nav {
+    list-style: none;
+    width: 80%;
+    padding: 12px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav a {
-    display: inline-block;
+    
     padding: 0px 10px;
     text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    
 }
 
 .slider_and_form {
@@ -110,7 +119,42 @@ section > h1 {
 }
 
 .calc_table {
+    width: 50%;
     margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #3F51B5;
+}
+
+.calc_table th {
+    text-align: left;
+    border: 1px solid #3F51B5;
+    padding: 15px 20px;
+}
+
+.calc_table td {
+    padding: 15px 20px;
+    border: 1px solid #3F51B5;
+    
+}
+
+.calc_table th:nth-child(2) {
+    text-align: center;
+}
+
+.calc_table th:nth-child(3) {
+    text-align: center;
+}
+
+.calc_table td:nth-child(2) {
+    text-align: center;
+}
+.calc_table td:nth-child(3) {
+    text-align: center;
+}
+
+.form_horizontal {
+    margin: 50px auto;
+    background-color: #2196F3;
 }
 
 .form_horizontal > form {
@@ -122,6 +166,7 @@ section > h1 {
 .form_horizontal input {
     width: 25%;
     height: 30px;
+    
 }
 
 .form_horizontal button {

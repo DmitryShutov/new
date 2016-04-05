@@ -1,5 +1,6 @@
 body {
     font-family: Roboto;
+    color: #2196F3;
 }
 .container {
     display: block;
@@ -18,14 +19,28 @@ body {
 
 .header_container>h2 {
 	font-family: Roboto;
-	font-size: 36px;	  
+	font-size: 32px;	  
     text-align: center;
+    color: #2196F3;
+    margin-top: 40px;
 }
 
 .contacts li {
     text-align: center;
     padding: 7px;
     list-style: none;
+}
+
+.contacts li a {
+    text-decoration: none;
+    color: #2196F3;
+    font-size: 18px;
+}
+
+.submit_button {
+    background-color: #2196F3;
+    color: white;
+    border: 2px solid #2196F3;
 }
 
 .menu {
@@ -64,7 +79,7 @@ body {
     width: 220px;
     position: absolute;
     top: 25%;
-    right: 15%;
+    right: 18%;
     background-color: white;
         
 }
@@ -75,6 +90,15 @@ body {
     display: block;
     padding: 11px 0;
     box-sizing: border-box;
+}
+
+.form_head {
+    background-color: #2196F3;
+    margin: 0px;
+    width: 220px;
+    padding: 0px;
+    color: white;
+    font-size: 16px;
 }
 
 .form_vertical > input {

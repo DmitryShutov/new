@@ -129,9 +129,20 @@
         </table>
 	</section>
     
-        <div class="button_div">
-            <button class="request_button">УЗНАТЬ ПОДРОБНЕЕ О НАШИХ ЦЕНАХ</button>
+        <div class="button_div">            
+            <a class="request_button" href="#openModal">УЗНАТЬ ПОДРОБНЕЕ О НАШИХ ЦЕНАХ</a>
+             <div id="openModal"class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">Х</a>
+                    <form action="mail" method="sendmail" class="form_modal">
+                        <input type="tel" placeholder="+7 (9ХХ)">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="submit" value="ЗАКАЗАТЬ ЗВОНОК" class="submit_button">
+                    </form>
+                </div>
+            </div>
         </div>
+       
     
     <section class="our_work container" id="our_work">
 		<h1>Фото наших работ</h1>

@@ -184,9 +184,67 @@ section > h1 {
 }
 
 .request_button {
-    margin: 50px auto;
+    display: block;
+    margin: 50px 30%;
     padding: 10px 50px;
     color: white;
     background-color: #2196F3;
-    border: none;   
+    border: none;
+    text-decoration: none;  
 }
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;    
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 350px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    background: #2196F3;  
+    color: white;  
+}
+
+.form_modal {
+    margin-top: 40px;
+}
+
+.form_modal > input {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    border: 2px solid #fff; 
+}
+
+.close {
+    color: #fff;
+    line-height: 25px;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    top: 5px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.close:hover {
+    background: #00d9ff;
+}
+

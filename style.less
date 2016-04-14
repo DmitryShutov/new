@@ -61,8 +61,7 @@ a {
                     .button;
             }
         }
-    }
-    
+    }    
 }
 
 .nav {
@@ -73,23 +72,78 @@ a {
     justify-content: space-around;
     background-color: @blue;
     padding: 20px;
-        li {
-            
+        li {            
             a {
                color: white;                          
-            }
-            
+            }            
             a:hover {
                 color: white;
             }
-        }
-    
+        }    
 }
 
+
 @media only screen and (max-width: 828px) {
-    .nav {
-        li        
+    .nav {       
+            display: none;                
     }
+    
+    .hamburger {
+        padding: 15px 0;
+        background-color: @blue;
+           .line {
+                margin: 0 auto;
+                display: block;
+                width: 40px;
+                height: 5px;
+                background-color: white;
+                margin-top: 7px;      
+            }        
+    }
+    
+    .openMenu {
+        display: block;
+        li {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+    
+    .lineWrap {
+        margin: 0 auto;
+        width: 40px;
+    }
+    
+    .transformation {
+        -webkit-transition: 0.3s ease-in;
+        -moz-transition: 0.3s ease-in;
+        -o-transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
+        
+    }
+    
+    .closeButton {
+        span {
+            position: absolute;
+            
+        }
+        span:nth-child(1) {
+            .transformation;
+            -webkit-transform: rotate(-45deg); 
+            -moz-transform: rotate(-45deg); 
+            
+        }
+        span:nth-child(2) {
+            display: none;
+        }
+        span:nth-child(3) {
+            .transformation;            
+            -webkit-transform: rotate(45deg); 
+            -moz-transform: rotate(45deg); 
+             
+        }
+        
+    }   
 }
 
 

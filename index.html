@@ -12,8 +12,8 @@
 	<header class="container col-12">
 		<div class="header_container">
 			<h1 class="col-3">МАЭСТРО</h1>
-			<h2 class="col-6">НАТЯЖНЫЕ ПОТОЛКИ В САМАРЕ И ОБЛАСТИ</h2>
-			<ul class="contacts col-3">
+			<h2 class="col-5">НАТЯЖНЫЕ ПОТОЛКИ В САМАРЕ И ОБЛАСТИ</h2>
+			<ul class="contacts col-4">
 				<li><a href="tel:+7-929-707-707-3">+7 (929) 707-707-3</a></li>
 				<li><a href="tel:+7-927-724-27-71">+7 (927) 724-27-71	</a></li>
 				<li> <button class="submit_button">ЗАКАЗАТЬ ЗВОНОК</button> </li>
@@ -59,30 +59,41 @@
 	<section class="why_we container col-12" id="why_we">
 		<h1>НАШИ ПРЕИМУЩЕСТВА</h1>
         <div class="list">
-            <div class="col-6 advantage">
+            <div class="col-6 left">
                 <ul>
-                    <li>изготовление 24 часа (сегодня замер - завтра монтаж)</li>
-                    <li>работа без выходных</li>
-                    <li>цветовая гамма от белого до фотопечати</li>
-                    <li>более 5 лет на рынке</li>
+                    <li> <img src="./img/tick.png" alt="tick"> изготовление 24 часа (сегодня замер - завтра монтаж)</li>
+                    <li><img src="./img/tick.png" alt="tick"> работа без выходных</li>
+                    <li><img src="./img/tick.png" alt="tick"> цветовая гамма от белого до фотопечати</li>
+                    <li><img src="./img/tick.png" alt="tick"> более 5 лет на рынке</li>
                 </ul>
             </div>
-            <div class="col-6 advantage"> 
+            <div class="col-6 left"> 
                 <ul>
-                    <li>бесплатный замер</li>
-                    <li>взрывозащищенное оборудование</li>
-                    <li>гарантия на работы - 3 года, на материалы - 10 лет</li>
-                    <li>более 7000 тысяч довольных клинетов за все время работы</li>
+                    <li><img src="./img/tick.png" alt="tick"> бесплатный замер</li>
+                    <li><img src="./img/tick.png" alt="tick"> взрывозащищенное оборудование</li>
+                    <li><img src="./img/tick.png" alt="tick"> гарантия на работы - 3 года, на материалы - 10 лет</li>
+                    <li><img src="./img/tick.png" alt="tick"> более 7000 тысяч довольных клинетов за все время работы</li>
                 </ul>
             </div>
         </div>
 	</section>
+    <p class="clear"></p>
     <section class="colors container col-12" id="colors">
         <h1>Цветовая гамма потолков</h1>
         <img src="img/color.png" alt="">
     </section>
-    <div class="button_div">
-            <button class="request_button">ВЫЗВАТЬ МАСТЕРА С ПОЛНЫМ КАТАЛОГОМ ПОЛОТЕН</button>
+    <div class="button_div col-12">            
+            <a class="request_button" href="#openModal">ВЫЗВАТЬ МАСТЕРА С КАТАЛОГОМ ПОЛОТЕН</a>
+             <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">Х</a>
+                    <form action="mail" method="sendmail" class="form_modal">
+                        <input type="tel" placeholder="+7 (9ХХ)">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="submit" value="ЗАКАЗАТЬ ЗВОНОК" class="submit_button">
+                    </form>
+                </div>
+            </div>
         </div>
 	<section class="calc container col-12" id="calc">
 		<h1>Расчет стоимости</h1>
@@ -143,10 +154,10 @@
             </tr>
         </table>
 	</section>
-    
+    <p class="clear"></p>
         <div class="button_div col-12">            
             <a class="request_button" href="#openModal">УЗНАТЬ ПОДРОБНЕЕ О НАШИХ ЦЕНАХ</a>
-             <div id="openModal"class="modalDialog">
+             <div id="openModal" class="modalDialog">
                 <div>
                     <a href="#close" title="Close" class="close">Х</a>
                     <form action="mail" method="sendmail" class="form_modal">

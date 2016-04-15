@@ -4,10 +4,10 @@
 
 /*variables*/
 @blue: #2196F3;
-@h1: 1.5em;
-@h2: 1.25em;
-@phone: 1.25em;
-@desktop: 1.25em;
+@h1: 1.25em;
+@h2: 1em;
+@phone: 1em;
+@desktop: 1em;
 
 body {
     font-family: Roboto;
@@ -27,22 +27,37 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    text-align: center;
+}
+
 .button {
     color: white;
     background-color: @blue;
     padding: 10px 20px;
     border: none;
+    text-align: center;
+}
+
+.big_horizontal_button {
+    width: 70%;
+    background-color: @blue;
+    color: white;
+    border: none;
+    margin: 20px 13%;
+    padding: 8px 20px;
+    text-align: center;
+    display: block;
 }
 
 .header_container {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 15px 0px 0px 0px;
     text-align: center;
     
     h1 {
-        margin: 40px 2%;
-        
+        margin: 40px 0% 40px 0%;       
     }
     
     h2 {
@@ -51,9 +66,10 @@ a {
     
     ul {
         margin-top: 0;
+        padding-left: 0px;
         li {
             padding: 7px;
-            font-size: @desktop;
+            font-size: @desktop;            
             a {
                 
             }
@@ -65,7 +81,6 @@ a {
 }
 
 .nav {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -81,7 +96,144 @@ a {
             }
         }    
 }
+.slider_and_form {
+    width: 100%;
+    img {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .slider_form {
+        position: absolute;
+        top: 300px;
+        right: 100px;
+        width: 220px;
+        background: white;
+        padding: 0px 0px 20px 0px;
+        input {
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+            width: 80%;
+            padding: 7px 0;
+        }
+        .submit_button {
+            .button;
+        }
+        
+        .form_head {
+                padding: 10%;
+                text-align: center;
+                color: white;
+                background: @blue;
+        }
+    }
+}
 
+.push_form {
+    top: 450px !important;   
+}
+
+.clear {
+    clear: both;
+}
+
+.why_we {
+    list {
+        img {
+            vertical-align: bottom;
+        }
+    }
+}
+
+.left {
+    float: left;
+}
+
+.colors {
+    text-align: center;
+    
+}
+
+.button_div {
+    text-align: center;
+}
+
+.request_button {
+    .big_horizontal_button;      
+}
+
+.calc_table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #3F51B5;
+    
+    th {
+        text-align: left;
+        border: 1px solid #3F51B5;
+        padding: 15px 20px;
+    }
+    
+    td {
+        padding: 15px 20px;
+        border: 1px solid #3F51B5;   
+    }
+    th:nth-child(2),th:nth-child(3),td:nth-child(2),td:nth-child(3) {
+        text-align: center;
+    }
+    
+    
+}
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    :target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    >div {
+        width: 350px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        background: #2196F3;  
+        color: white;        
+    }    
+}
+.form_modal {
+        margin-top: 40px;
+        >input {
+            width: 80%;
+            margin: 20px auto;
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            border: 2px solid #fff;            
+        }
+        
+    }
+.close {
+            color: #fff;
+            line-height: 25px;
+            position: absolute;
+            right: 12px;
+            text-align: center;
+            top: 5px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            :hover {
+                background: #00d9ff;
+            }
+        }
 
 @media only screen and (max-width: 828px) {
     .nav {       
@@ -99,6 +251,11 @@ a {
                 background-color: white;
                 margin-top: 7px;      
             }        
+    }
+    .why_we {
+        ul {
+            padding: 0 10px 0 10px;
+        }
     }
     
     .openMenu {
@@ -175,5 +332,17 @@ a {
     }
     [class*="col-"] {
         width: 100%;
+    }
+    
+    .slider_form {
+        display: none;
+    }
+    
+    .colors {
+        width: 90%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
     }
 }
